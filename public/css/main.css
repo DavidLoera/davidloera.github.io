@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    background-color: #161616
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.container::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px); /* apply the blur */
+    pointer-events: none; /* make the overlay click-through */
+  }
+  
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: no-repeat center center;
+    background-image: url('../image/main2.jpg');
+    background-size: cover;
+  }
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 30px 20px;
+    font-family: 'Roboto', sans-serif;
+    z-index: 10;
+}
+
+header.abajo{
+    background: #161616;
+    padding: 15px 20px;
+}
+
+header .logo{
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    transition: 1.5s;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.7s;
+}
+
+header ul li a:hover{
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 15px;
+    text-decoration: none;
+    color: rgb(192, 6, 68);
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.7s;
+}
+
+
+header.abajo .logo,
+header.abajo ul li a{
+    color: rgb(255, 255, 255);
+}
+
+header.abajo ul li a:hover{
+    color: rgb(192, 6, 68);
+}
+
+::-webkit-scrollbar {
+	width: .7em
+}
+
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: inset 0 0 92px rgba(0, 0, 0, 0.3)
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #9c072c;
+}
+
