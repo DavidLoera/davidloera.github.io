@@ -1,14 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
 
 html, body{
     height: 100%;
-    background-color: #161616
+    background-color: #161616;
+    font-family: 'Roboto', 'sans-serif';
+    scroll-behavior: smooth;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 
 .container::after {
     content: "";
@@ -17,6 +23,7 @@ html, body{
     height: 100%;
     backdrop-filter: blur(10px); /* apply the blur */
     pointer-events: none; /* make the overlay click-through */
+    
   }
   
   .container {
@@ -25,6 +32,7 @@ html, body{
     height: 100%;
     background: no-repeat center center;
     background-image: url('../image/main2.jpg');
+    
     background-size: cover;
   }
 
@@ -60,6 +68,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 header ul{
@@ -84,12 +93,18 @@ header ul li a{
     transition: 0.7s;
 }
 
+header img{
+    height: 100%;
+    padding: 15px; /* firefox bug fix */
+    width: auto;
+}
+
 header ul li a:hover{
     position: relative;
     font-family: 'Roboto', sans-serif;
     margin: 0 15px;
     text-decoration: none;
-    color: rgb(192, 6, 68);
+    color: rgb(192, 6, 136);
     letter-spacing: 2px;
     font-weight: 600;
     transition: 0.7s;
@@ -105,6 +120,122 @@ header.abajo ul li a:hover{
     color: rgb(192, 6, 68);
 }
 
+.hamburguer{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3 ease-in-out;
+    transition: all 0.3 ease-in-out;
+    background-color: white;
+}
+
+.nav-item-contact{
+    margin: 16px 0;
+    padding-left: 120px;
+}
+
+
+
+@media(max-width:768px){
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        background-color: #1f0022;
+        justify-content: space-around;
+        transition: 0.7s;
+        padding: 30px 20px;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    header img{
+        
+        padding: px; /* firefox bug fix */
+        width: 95%;
+    }
+
+    .nav-item-contact{
+        margin: 16px 0;
+        padding: 0;
+    }
+    
+    .perfil{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding-top: 32%;
+        color: #fff;
+    }
+
+    .hamburguer{display: block;}
+
+    .hamburguer.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburguer.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburguer.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 120px;
+        gap: 0;
+        backdrop-filter: blur(15px);
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.9s;
+    }
+
+
+    .nav-item{
+        margin: 16px 0;
+    }
+  
+
+    .nav-menu.active{
+        left: 0;
+    }
+
+    .nav-menu.active.abajo{
+        position: fixed;
+        left: 0;
+        top: 95px;
+        gap: 0;
+        flex-direction: column;
+        background: #161616;
+        width: 100%;
+        text-align: center;
+        transition: 0.7s;
+    }
+}
+
+.perfil{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 10% 3%;
+    color: #fff;
+}
+
+
+
 ::-webkit-scrollbar {
 	width: .7em
 }
@@ -118,3 +249,20 @@ header.abajo ul li a:hover{
 	background-color: #9c072c;
 }
 
+.whatsapp {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+  }
+  
+  .whatsapp-icon {
+    margin-top:13px;
+  }
