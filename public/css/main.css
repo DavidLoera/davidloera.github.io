@@ -111,6 +111,7 @@ body {
   padding: 20px;
   width: 350px;
   height: 100px;
+  border: 3px solid #fff;
   transition: all 0.5s;
   cursor: pointer;
   margin-left: 40%;
@@ -512,7 +513,6 @@ header.abajo ul li a:hover {
   }
   
   .button {
-    
     border-radius: 4px;
     background-color: #1f0022;
     border: none;
@@ -521,6 +521,7 @@ header.abajo ul li a:hover {
     font-size: 25px;
     padding: 20px;
     width: 235px;
+    border: 3px solid #fff;
     height: 70px;
     transition: all 0.5s;
     cursor: pointer;
