@@ -575,7 +575,7 @@ Inicio de responsivo horizontal
 */
 
 
-@media (max-width: 820px) {
+@media (width: 820px) {
     .wrapper {
       margin-top: 15%;
       height: 16vh;
