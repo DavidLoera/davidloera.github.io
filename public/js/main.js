@@ -22,3 +22,4 @@ window.addEventListener("scroll", function(){
     const menu = document.querySelector(".nav-menu");
     menu.classList.toggle("abajo", window.scrollY>0);
 })
+
