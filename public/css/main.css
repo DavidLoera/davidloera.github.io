@@ -564,7 +564,68 @@ header.abajo ul li a:hover {
 }
 
 
+.educacion{
+  width: 100%;
+  height: 45%;
+  padding-top: 0%;
+  background: rgb(22,22,22);
+  background: -moz-linear-gradient(143deg, rgba(22,22,22,1) 26%, rgba(22,22,22,1) 43%, rgba(23,15,27,1) 70%, rgba(24,8,31,1) 100%, rgba(25,4,34,0.01) 100%);
+  background: -webkit-linear-gradient(143deg, rgba(22,22,22,1) 26%, rgba(22,22,22,1) 43%, rgba(23,15,27,1) 70%, rgba(24,8,31,1) 100%, rgba(25,4,34,0.01) 100%);
+  background: linear-gradient(143deg, rgba(22,22,22,1) 26%, rgba(22,22,22,1) 43%, rgba(23,15,27,1) 70%, rgba(24,8,31,1) 100%, rgba(25,4,34,0.01) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#161616",endColorstr="#190422",GradientType=1);
+}
 
+.educacion h1{
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-top: 26px;
+  padding-bottom: 50px;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+}
+
+.education_container{
+  padding: 15px 0;
+  min-height: 300px;
+  color: white;
+  display: flex;
+ margin-left: -7%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.schools{
+  width: 85%;
+  min-height: 250px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.school{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+.school .fas {
+  padding: 20px;
+  font-size: 2.5rem;
+  width: 95px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: #262626;
+  transition: 1s ease-in-out;
+  background-color: white;
+  border: 3px solid #bbb;
+  box-shadow: 0 0 10px rgb(0, 36, 28);
+}
 
 
 
@@ -954,7 +1015,43 @@ header.abajo ul li a:hover {
     text-transform: uppercase;
   
   }
+
+  .education_container{
+    gap: 30px;
+  }
+  .schools{
+    flex-direction: column;
+    gap: 50px;
+  }
   
+
+  
+.educacion{
+  width: 100%;
+  height: 145%;
+  padding-top: 0%;
+  background: rgb(22,22,22);
+  background: -moz-linear-gradient(143deg, rgba(22,22,22,1) 26%, rgba(22,22,22,1) 43%, rgba(23,15,27,1) 70%, rgba(24,8,31,1) 100%, rgba(25,4,34,0.01) 100%);
+  background: -webkit-linear-gradient(143deg, rgba(22,22,22,1) 26%, rgba(22,22,22,1) 43%, rgba(23,15,27,1) 70%, rgba(24,8,31,1) 100%, rgba(25,4,34,0.01) 100%);
+  background: linear-gradient(143deg, rgba(22,22,22,1) 26%, rgba(22,22,22,1) 43%, rgba(23,15,27,1) 70%, rgba(24,8,31,1) 100%, rgba(25,4,34,0.01) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#161616",endColorstr="#190422",GradientType=1);
+}
+
+.educacion h1{
+  padding-top: 15%;
+}
+
+
+.education_container{
+  padding: 15px 0;
+  min-height: 300px;
+  color: white;
+  display: flex;
+  margin-left: 5%;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
   /**Fin de la pantalla principal*/
 }
 
@@ -1336,6 +1433,34 @@ and (max-device-width: 912px){
       font-size: 9em;
       text-transform: uppercase;
     
+    }
+
+    .educacion{
+      width: 100%;
+      height: 95%;
+      padding-top: 0%;
+      background: rgb(22,22,22);
+      background: -moz-linear-gradient(143deg, rgba(22,22,22,1) 26%, rgba(22,22,22,1) 43%, rgba(23,15,27,1) 70%, rgba(24,8,31,1) 100%, rgba(25,4,34,0.01) 100%);
+      background: -webkit-linear-gradient(143deg, rgba(22,22,22,1) 26%, rgba(22,22,22,1) 43%, rgba(23,15,27,1) 70%, rgba(24,8,31,1) 100%, rgba(25,4,34,0.01) 100%);
+      background: linear-gradient(143deg, rgba(22,22,22,1) 26%, rgba(22,22,22,1) 43%, rgba(23,15,27,1) 70%, rgba(24,8,31,1) 100%, rgba(25,4,34,0.01) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#161616",endColorstr="#190422",GradientType=1);
+    }
+
+    .education_container{
+      padding: 15px 0;
+      min-height: 300px;
+      color: white;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+
+    .schools{
+      flex-direction: column;
+      gap: 50px;
     }
     /**Fin de la pantalla principal*/
   }
