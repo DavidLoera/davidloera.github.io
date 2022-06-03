@@ -285,6 +285,24 @@ header.abajo ul li a:hover {
 }
 
 
+.facebook {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 120px;
+  right: 40px;
+  background-color: #3b5998;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+}
+
+.facebook-icon {
+  margin-top: 13px;
+}
+
 
 .circles{
   top: 0;
@@ -416,7 +434,7 @@ header.abajo ul li a:hover {
 .separador{
 	background: linear-gradient(-45deg, #399953, #fbb300, #d53e33, #377af5);
 	background-size: 400% 400%;
-	animation: gradient 3s ease infinite;
+	animation: gradient 13s ease infinite;
   height: 11.6%;
   width: 100%;
 }
@@ -461,7 +479,7 @@ header.abajo ul li a:hover {
   font-family: 'Roboto', sans-serif;
   margin-top: 20px;
   padding-left: 7px;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 .about .contenedorabout{
@@ -485,7 +503,7 @@ header.abajo ul li a:hover {
   padding-right: 15%;
   margin-top: -1%;
   text-align: justify;
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
 
@@ -628,6 +646,112 @@ header.abajo ul li a:hover {
 }
 
 
+/*Habilidades*/
+
+.skills{
+  width: 100%;
+  background: rgb(25,4,34);
+  background: -moz-linear-gradient(143deg, rgba(25,4,34,1) 26%, rgba(22,22,22,1) 71%);
+  background: -webkit-linear-gradient(143deg, rgba(25,4,34,1) 26%, rgba(22,22,22,1) 71%);
+  background: linear-gradient(143deg, rgba(25,4,34,1) 26%, rgba(22,22,22,1) 71%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#190422",endColorstr="#161616",GradientType=1);
+  padding-bottom: 15%;
+}
+
+.skills h1{
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-top: 26px;
+  padding-bottom: 50px;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+}
+
+.skills-container{
+  width: 1366px;
+  min-height: 675px;
+  margin: auto;
+  color: white;
+}
+
+.skills-contents{
+  width: 85%;
+  margin: auto;
+  min-height: 675px;
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.skills-boxes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skills_languages{
+  width: 450px;
+  height: auto;
+  line-height: 1.5;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.skills_header{
+  width: 100%;
+}
+
+.fa-exclamation-circle{
+  color: rgb(66, 50, 205);
+}
+
+.skills_ranges{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.skill-name{
+  font-size: 1rem;
+  font-weight: 600;
+  color: #f1f1f1;
+  margin: 15px 0;
+}
+
+.skill-bar{
+  height: 6px;
+  background: gray;
+  border-radius: 3px;
+}
+
+.skill-per1,.skill-per2,.skill-per3,.skill-per4,.skill-per5,.skill-per6,.skill-per7,.skill-per8,.skill-per9,.skill-per10,.skill-per11,.skill-per12{
+  color: black;
+  height: 6px;
+  background: rgb(192, 6, 136);
+  border-radius: 3px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+  
+}
+
+.skill-per1::before,.skill-per2::before,.skill-per3::before,.skill-per4::before,.skill-per5::before,.skill-per6::before,.skill-per7::before,.skill-per8::before,.skill-per9::before,.skill-per10::before,.skill-per11::before, .skill-per12::before{
+  content: attr(per);
+  position: absolute;
+  padding: 2px 4px;
+  color: white;
+  font-weight: bolder;
+  border-radius: 4px;
+  font-size: 12px;
+  top: -35px;
+  right: 0;
+  transform: translateX(50%);
+}
 
 
 
@@ -843,6 +967,43 @@ header.abajo ul li a:hover {
       border-color: transparent;
     }
   }
+
+  .whatsapp {
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    bottom: 20px;
+    right: 10px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+  }
+  
+  .whatsapp-icon {
+    margin-top: 7px;
+  }
+  
+  
+  .facebook {
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    bottom: 100px;
+    right: 3px;
+    background-color: #3b5998;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+  }
+  
+  .facebook-icon {
+    margin-top: 7px;
+  }
   
   .button {
     border-radius: 4px;
@@ -1052,15 +1213,24 @@ header.abajo ul li a:hover {
   flex-direction: column;
   gap: 30px;
 }
+
+
   /**Fin de la pantalla principal*/
 }
 
 
+@media(max-width: 1366px){
 
 
+  .skills-container{
+    width: 100%;
+    padding: 20px 0;
+  }
 
-
-
+  .text-skill{
+    padding-top: 15%;
+  }
+}
 /**
 Inicio de responsivo horizontal
 */
