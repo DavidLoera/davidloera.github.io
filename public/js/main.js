@@ -57,6 +57,7 @@ var typed2 = new Typed(".auto-type2", {
 
     const skillsAppearOnScroll = new IntersectionObserver( function(entries, skillsAppearOnScroll) {
         entries.forEach(entry => {
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent) == false) {
           if(entry.isIntersecting){
 
             entry.target.classList.add("animate__animated", "animate__fadeInLeft");
@@ -65,6 +66,7 @@ var typed2 = new Typed(".auto-type2", {
           } else {
             return; 
           }
+        }
         })
       }, appearOptions)
 
@@ -86,19 +88,18 @@ var typed2 = new Typed(".auto-type2", {
 
 const commandAppearOnScroll = new IntersectionObserver( function(entries, commandAppearOnScroll) {
     entries.forEach(entry => {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent) == false) {
       if(entry.isIntersecting){
-
-
-
   
-        entry.target.classList.add("animate__animated", "animate__fadeInLeft");
-        command.classList.add("animate__animated", "animate__fadeInRight");
+        entry.target.classList.add("animate__animated", "animate__bounceIn");
+        command.classList.add("animate__animated", "animate__bounceIn");
         
         commandAppearOnScroll.unobserve(entry.target);
 
       } else {
         return; 
       }
+    }
     })
   }, appearOptions)
 
