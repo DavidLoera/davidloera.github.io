@@ -962,14 +962,18 @@ header.abajo ul li a:hover {
 
   .hamburguer {
     display: block;
+    cursor: pointer;  
+    transition: 1s;
   }
 
   .hamburguer.active .bar:nth-child(2) {
     opacity: 0;
+    transition: 1s;
   }
 
   .hamburguer.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
+    transition: 0.4s;
   }
 
   .hamburguer.active .bar:nth-child(3) {
