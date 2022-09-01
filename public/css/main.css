@@ -12,6 +12,7 @@ body {
   height: 100%;
   background-color: #161616;
   font-family: "Roboto", "sans-serif";
+  scroll-behavior: smooth;
 }
 
 /**Inicio de la pantalla principal*/
